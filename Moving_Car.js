@@ -1,7 +1,7 @@
 // Car position variable
 let carX = 0;
 let carY;
-let carSpeed = 3;
+let carSpeed = 20;
 
 function setup() {
   createCanvas(800, 400);
@@ -19,7 +19,7 @@ function draw() {
   // ===== END BILLBOARD HERE =====
 
   // ===== DRAW GRASS =====
-  fill(34, 139, 34); // Green grass
+  fill(255, 255, 255); 
   rect(0, height / 2 + 50, width, height);
 
   // ===== DRAW ROAD =====
@@ -49,11 +49,11 @@ function draw() {
 // Function to draw the car
 function drawCar(x, y) {
   // Car body (red)
-  fill(255, 0, 0);
+  fill(0, 0, 139),
   rect(x, y, 100, 40, 5);
 
   // Car top (red)
-  fill(200, 0, 0);
+  fill(0, 0, 139);
   rect(x + 20, y - 25, 60, 30, 5);
 
   // Windows (light blue)
@@ -74,4 +74,22 @@ function drawCar(x, y) {
   // Headlight (yellow)
   fill(255, 255, 0);
   circle(x + 95, y + 15, 8);
+  
+  fill(211, 211, 211);
+  rect(278, 221, 25, 165);
+  
+ fill(73, 157, 288);
+rect(230, 210, 119, 70, 270);
+  
+  fill(255, 255, 255);
+text('GOTTA GO FAST', 243, 250);
+  
+  fill(242, 240, 239)
+circle(480, 345, 75)
+circle(480, 309, 65)
+circle(480, 270, 45)
+  fill(0, 0, 0)
+  rect(453, 245, 55, 5)
+  fill(0, 0, 0)
+  rect(463, 205, 35, 45)
 }
